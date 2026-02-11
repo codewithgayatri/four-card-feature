@@ -1,0 +1,95 @@
+body{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 0.68rem;
+}
+:root{
+    --light-grey:hsl(212, 6%, 44%);
+    --dark-grey:hsl(234, 12%, 34%);
+}
+.h1{
+    color: var(--light-grey);
+    font-weight: 400;
+    margin-bottom: 0rem;
+}
+.h2{
+    color:var(--dark-grey);
+}
+p{
+    color:var(--light-grey)
+}
+.card{
+    height: 9.375rem;
+    width: 13.75rem; 
+    background-color: hsl(0, 0%, 100%);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.625rem 1.25rem  var(--light-grey);
+}
+div > p {
+    color: var(--light-grey);
+    font-weight: 400;
+    margin-top: 0;
+    text-align: justify;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    justify-items: center;
+}
+#b1{
+    border-top: 3px solid hsl(180, 62%, 55%);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+}
+#b2{
+    border-top: 3px solid hsl(0, 78%, 62%);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: start;
+}
+#b3{
+    border-top: 3px solid hsl(34, 97%, 64%);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+#b4{
+    border-top: 3px solid hsl(212, 86%, 64%);
+    grid-column: 3 / 4;
+    grid-row: 1 / 3; 
+    align-self: center;
+}
+img{
+    width: 35px;
+    display: block;
+    margin-left: auto; 
+    margin-right: 1rem;
+}
+.card > h2{
+    color:var(--dark-grey);
+    font-weight: 600;
+}
+
+@media(max-width:350px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+.p1{
+    margin-top: 0.3rem;
+    margin-bottom: 2.5rem;
+}
+.card h2{
+    text-align: start;
+    margin-bottom: 0rem;
+}
